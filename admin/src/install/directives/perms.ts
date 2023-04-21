@@ -11,7 +11,6 @@ export default {
         const userStore = useUserStore()
         const permissions = userStore.perms
         const all_permission = '*'
-        console.log("aaa");
         if (Array.isArray(value)) {
             if (value.length > 0) {
                 const hasPermission = permissions.some((key: string) => {

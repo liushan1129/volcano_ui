@@ -4,6 +4,9 @@ import request from '@/utils/request'
 export function adminLists(params: any) {
     return request.get({ url: '/system/admin/list', params })
 }
+export function adminListByCondition(params: any) {
+    return request.get({url: '/system/admin/getListByCondition', params})
+}
 
 // 管理员添加
 export function adminAdd(params: any) {
