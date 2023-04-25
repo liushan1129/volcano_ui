@@ -23,13 +23,7 @@
               clearable
           />
         </el-form-item>
-
-        <el-form-item label="教练" prop="userName">
-          <el-input
-              class="ls-input"
-              v-model="formData.username"
-
-          />
+        <el-form-item label="教练" prop="username">
           <el-select
               v-model="formData.userId"
               filterable
@@ -86,7 +80,7 @@ const popupTitle = computed(() => {
 const formData = reactive({
   id: '',
   name: '',
-  userId: 0,
+  userId: '',
   username: '',
   memberIds: ''
 })
@@ -124,8 +118,8 @@ const setFormData = async (row: Record<any, any>) => {
     id: row.id
   })
   for (const key in formData) {
+    console.log(key + ": " +data[key]);
     if (data[key] != null && data[key] != undefined) {
-      console.log(key + ": " +data[key])
       //@ts-ignore
       formData[key] = data[key]
     }

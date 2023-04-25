@@ -1,7 +1,8 @@
 import request from '@/utils/request'
 
-export function groupAll(params?: any) {
-    return request.get({ url: '/group/all', params })
+
+export function groupListByCondition(params?: any) {
+    return request.get({ url: '/group/list/condition', params })
 }
 export function groupList(params: any) {
     return request.get({ url: '/group/list', params });
@@ -21,3 +22,4 @@ export function groupEdit(params: any) {
 export function groupDelete(params: any) {
     return request.post({ url: '/group/del', params })
 }
+

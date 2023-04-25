@@ -44,6 +44,7 @@ export function useDictOptions<T = any>(options: Options) {
         optionsData: optionsData as T,
         refresh
     }
+
 }
 
 // useDictOptions<{

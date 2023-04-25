@@ -37,6 +37,7 @@
 <!--                  <course-category-selector v-model="formData.courseCategory">-->
 <!--                  </course-category-selector>-->
 <!--                </el-form-item>-->
+              {{optionsData.courseType}}
               <el-form-item label="课程类型" prop="courseTypes">
                 <el-select
                     class="flex-1"
